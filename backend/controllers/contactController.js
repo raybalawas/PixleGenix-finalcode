@@ -31,12 +31,15 @@ exports.submitContactForm = async (req, res) => {
         <p><strong>Message:</strong><br/>${message}</p>
       `,
     };
-    await transporter.sendMail(mailOptions).then(() => {
-      console.log("Email sent successfully");
-    }).catch((error) => {
-      console.error("Error sending email:", error);
-      return res.status(500).json({ error: "Failed to send email" });
-    });
+    await transporter
+      .sendMail(mailOptions)
+      .then(() => {
+        console.log("Email sent successfully");
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        return res.status(500).json({ error: "Failed to send email" });
+      });
 
     res.status(200).json({ message: "Contact form submitted successfully" });
   } catch (error) {
