@@ -338,7 +338,7 @@ const Services = () => {
                 )}
 
                 {/* Payment Options */}
-                {selectedService.payments && (
+                {/* {selectedService.payments && (
                   <>
                     <h4 className="text-xl font-semibold text-gray-800 mt-10 mb-3">Payment Options</h4>
                     <div className="flex flex-wrap gap-3">
@@ -352,7 +352,7 @@ const Services = () => {
                       ))}
                     </div>
                   </>
-                )}
+                )} */}
               </div>
             </div>
           </div>

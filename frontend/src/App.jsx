@@ -12,31 +12,35 @@ import Company from "./pages/Company";
 import AdminLogin from "./admin/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminServices from "./admin/AdminServices";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/blog" element={<BlogSection />} />
-            <Route path="/blog/:slug" element={<BlogDetail />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/company/:section" element={<Company/>} />
-            <Route path="/admin-login" element={<AdminLogin />} />
-            <Route path="/admin-dashboard" element={<AdminDashboard />} />
-            <Route path="/admin/services" element={<AdminServices />} />
+    <>
+      <Router>
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/blog" element={<BlogSection />} />
+              <Route path="/blog/:slug" element={<BlogDetail />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/company/:section" element={<Company />} />
+              <Route path="/admin-login" element={<AdminLogin />} />
+              <Route path="/admin-dashboard" element={<AdminDashboard />} />
+              <Route path="/admin/services" element={<AdminServices />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
 
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+      <WhatsAppButton />
+    </>
   );
 }
 

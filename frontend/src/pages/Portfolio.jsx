@@ -1,44 +1,59 @@
 // Portfolio.jsx
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import portfolio1 from "../assets/portfolio1.avif"; 
+import portfolio2 from "../assets/portfolio2.avif"; 
+import portfolio3 from "../assets/portfolio3.avif"; 
+import portfolio4 from "../assets/portfolio4.avif";
 const projects = [
   {
     id: 1,
     title: "E-Commerce Website",
-    description: "A full-featured e-commerce platform with cart, payments, and admin panel.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80",
+    description:
+      "A full-featured e-commerce platform with cart, payments, and admin panel.",
+    image: portfolio1,
     technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
-    whyBetter: "Highly scalable and user-friendly interface that enhances the shopping experience.",
-    howBuilt: "Built with MERN stack, secured payment integration, and responsive UI."
+    whyBetter:
+      "Highly scalable and user-friendly interface that enhances the shopping experience.",
+    howBuilt:
+      "Built with MERN stack, secured payment integration, and responsive UI.",
   },
   {
     id: 2,
     title: "Mobile Banking App",
-    description: "Secure and user-friendly mobile banking application for iOS and Android.",
-    image: "https://images.unsplash.com/photo-1681826292838-c37fbd22263a?w=800&auto=format&fit=crop&q=80",
+    description:
+      "Secure and user-friendly mobile banking application for iOS and Android.",
+    image: portfolio2,
     technologies: ["Flutter", "Firebase", "Node.js"],
-    whyBetter: "Ensures fast transactions and high-level security with biometric login.",
-    howBuilt: "Cross-platform development using Flutter and Firebase authentication."
+    whyBetter:
+      "Ensures fast transactions and high-level security with biometric login.",
+    howBuilt:
+      "Cross-platform development using Flutter and Firebase authentication.",
   },
   {
     id: 3,
     title: "Corporate Website",
-    description: "Responsive website designed for a corporate client with CMS integration.",
-    image: "https://images.unsplash.com/photo-1621857093087-7daa85ab14a6?w=800&auto=format&fit=crop&q=80",
+    description:
+      "Responsive website designed for a corporate client with CMS integration.",
+    image: portfolio3,
     technologies: ["Next.js", "Headless CMS", "Tailwind CSS"],
-    whyBetter: "SEO-optimized, fast-loading pages, and easy content management.",
-    howBuilt: "Server-side rendered with Next.js and integrated with a headless CMS."
+    whyBetter:
+      "SEO-optimized, fast-loading pages, and easy content management.",
+    howBuilt:
+      "Server-side rendered with Next.js and integrated with a headless CMS.",
   },
   {
     id: 4,
     title: "Social Media Platform",
-    description: "Scalable social media web app with real-time messaging and notifications.",
-    image: "https://images.unsplash.com/photo-1611926653670-e18689373857?w=800&auto=format&fit=crop&q=80",
+    description:
+      "Scalable social media web app with real-time messaging and notifications.",
+    image: portfolio4,
     technologies: ["React", "Socket.IO", "Express.js", "MongoDB"],
-    whyBetter: "Interactive UI, real-time updates, and robust back-end performance.",
-    howBuilt: "WebSockets for real-time chat, React for dynamic UI, and MongoDB for storage."
-  }
+    whyBetter:
+      "Interactive UI, real-time updates, and robust back-end performance.",
+    howBuilt:
+      "WebSockets for real-time chat, React for dynamic UI, and MongoDB for storage.",
+  },
 ];
 
 const Portfolio = () => {
@@ -51,7 +66,10 @@ const Portfolio = () => {
       <div className="relative h-[100vh] flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581091012184-5c7aca3893d4?auto=format&fit=crop&q=80&w=1600')" }}
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1581091012184-5c7aca3893d4?auto=format&fit=crop&q=80&w=1600')",
+          }}
         />
         <div className="absolute inset-0 bg-black bg-opacity-60" />
         <motion.div
@@ -61,11 +79,13 @@ const Portfolio = () => {
           transition={{ duration: 1 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-            Crafting Digital Success Stories with <span className="text-indigo-400">Fusion Coder</span>
+            Crafting Digital Success Stories with{" "}
+            <span className="text-indigo-400">Fusion Coder</span>
           </h2>
           <p className="text-md md:text-lg">
-            Explore our diverse portfolio of 500+ projects where we empowered businesses to lead with smart,
-            scalable, and future-ready digital products. Your transformation story starts here.
+            Explore our diverse portfolio of 500+ projects where we empowered
+            businesses to lead with smart, scalable, and future-ready digital
+            products. Your transformation story starts here.
           </p>
         </motion.div>
       </div>
@@ -124,7 +144,9 @@ const Portfolio = () => {
             </ul>
             <h4 className="text-lg font-semibold mb-1">How We Built It:</h4>
             <p className="text-gray-700 mb-4">{selectedProject.howBuilt}</p>
-            <h4 className="text-lg font-semibold mb-1">Why This is Better for You:</h4>
+            <h4 className="text-lg font-semibold mb-1">
+              Why This is Better for You:
+            </h4>
             <p className="text-gray-700">{selectedProject.whyBetter}</p>
           </motion.div>
         )}

@@ -3,6 +3,18 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import blog1 from "../assets/blog1.webp"; 
+import blog2 from "../assets/blog2.webp";
+import blog3 from "../assets/blog3.jpeg";
+import blog4 from "../assets/blog4.jpeg";
+import blog5 from "../assets/blog5.webp";
+import blog6 from "../assets/blog6.webp";
+import blog7 from "../assets/blog7.png";
+import blog8 from "../assets/blog8.jpeg";
+import blog9 from "../assets/blog9.webp";
+import blog10 from "../assets/blog10.jpeg";
+import blog11 from "../assets/blog11.webp"; // Add more images as needed
+
 
 const categories = [
   "Latest",
@@ -20,8 +32,9 @@ const postsByCat = {
       category: "Mobile App Development",
       author: "Rajat Verma",
       date: "12 June, 2025",
-      img: "https://images.pexels.com/photos/7947951/pexels-photo-7947951.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content: "Rapid Application Development (RAD) is a software development methodology that emphasizes quick development and iteration of prototypes. It enables developers to adjust quickly to changing requirements using reusable components and rapid prototyping."
+      img: blog1,
+      content:
+        "Rapid Application Development (RAD) is a software development methodology that emphasizes quick development and iteration of prototypes. It enables developers to adjust quickly to changing requirements using reusable components and rapid prototyping.",
     },
     {
       id: 2,
@@ -29,8 +42,9 @@ const postsByCat = {
       category: "Mobile App Development",
       author: "Suman Mishra",
       date: "11 June, 2025",
-      img: "https://images.pexels.com/photos/5082576/pexels-photo-5082576.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content: "Enterprise mobile apps streamline business processes, enhance productivity, and provide secure access to corporate data. This guide explores architecture, platform choices, and integration strategies."
+      img: blog2,
+      content:
+        "Enterprise mobile apps streamline business processes, enhance productivity, and provide secure access to corporate data. This guide explores architecture, platform choices, and integration strategies.",
     },
     {
       id: 3,
@@ -38,9 +52,10 @@ const postsByCat = {
       category: "Mobile App Development",
       author: "Ajay Kumar",
       date: "10 June, 2025",
-      img: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content: "Artificial Intelligence is revolutionizing DevOps by automating CI/CD pipelines, enhancing predictive maintenance, and improving system reliability through anomaly detection."
-    }
+      img: blog3,
+      content:
+        "Artificial Intelligence is revolutionizing DevOps by automating CI/CD pipelines, enhancing predictive maintenance, and improving system reliability through anomaly detection.",
+    },
   ],
   Fintech: [
     {
@@ -49,8 +64,9 @@ const postsByCat = {
       category: "Fintech",
       author: "Neha Singh",
       date: "11 March, 2025",
-      img: "https://images.pexels.com/photos/5922204/pexels-photo-5922204.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content: "Money management software like Quicken integrates budgeting tools, account sync, and investment tracking. This article discusses architecture, compliance, and user-focused features."
+      img: blog4,
+      content:
+        "Money management software like Quicken integrates budgeting tools, account sync, and investment tracking. This article discusses architecture, compliance, and user-focused features.",
     },
     {
       id: 5,
@@ -58,9 +74,10 @@ const postsByCat = {
       category: "Fintech",
       author: "Manish Kumar",
       date: "22 February, 2025",
-      img: "https://images.pexels.com/photos/1447418/pexels-photo-1447418.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content: "Bitcoin has evolved into a decentralized financial system that enables global digital payments without intermediaries. This post covers blockchain principles and transaction validation."
-    }
+      img: blog5,
+      content:
+        "Bitcoin has evolved into a decentralized financial system that enables global digital payments without intermediaries. This post covers blockchain principles and transaction validation.",
+    },
   ],
   "Mobile App Development": [
     {
@@ -69,8 +86,9 @@ const postsByCat = {
       category: "Mobile App Development",
       author: "Priya Yadav",
       date: "29 May, 2025",
-      img: "https://images.pexels.com/photos/50614/pexels-photo-50614.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content: "Understanding timelines helps in planning app releases efficiently. This guide explains discovery, design, development, testing, and launch phases."
+      img: blog6,
+      content:
+        "Understanding timelines helps in planning app releases efficiently. This guide explains discovery, design, development, testing, and launch phases.",
     },
     {
       id: 7,
@@ -78,9 +96,10 @@ const postsByCat = {
       category: "Mobile App Development",
       author: "Vivek Jha",
       date: "28 May, 2025",
-      img: "https://images.unsplash.com/photo-1581093588401-3e204c1ebf07",
-      content: "TypeScript offers static typing and robust tooling, while JavaScript is dynamically typed. Learn which one to choose depending on your app requirements."
-    }
+      img: blog7,
+      content:
+        "TypeScript offers static typing and robust tooling, while JavaScript is dynamically typed. Learn which one to choose depending on your app requirements.",
+    },
   ],
   "On Demand Apps": [
     {
@@ -89,8 +108,9 @@ const postsByCat = {
       category: "On Demand Apps",
       author: "Anita Chauhan",
       date: "29 January, 2025",
-      img: "https://images.pexels.com/photos/4907441/pexels-photo-4907441.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content: "Hotel booking apps require listing integration, secure payments, geo-targeting, and availability sync. We explore how to develop scalable OYO-like apps."
+      img: blog8,
+      content:
+        "Hotel booking apps require listing integration, secure payments, geo-targeting, and availability sync. We explore how to develop scalable OYO-like apps.",
     },
     {
       id: 9,
@@ -98,9 +118,10 @@ const postsByCat = {
       category: "On Demand Apps",
       author: "Raghav Sharma",
       date: "3 January, 2025",
-      img: "https://images.pexels.com/photos/3912478/pexels-photo-3912478.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content: "OTT platforms are growing exponentially. This article lists 20 reliable OTT app development companies with proven success and innovative solutions."
-    }
+      img: blog9,
+      content:
+        "OTT platforms are growing exponentially. This article lists 20 reliable OTT app development companies with proven success and innovative solutions.",
+    },
   ],
   "App Ideas": [
     {
@@ -109,19 +130,22 @@ const postsByCat = {
       category: "App Ideas",
       author: "Deepa Mehta",
       date: "31 January, 2025",
-      img: "https://images.pexels.com/photos/907489/pexels-photo-907489.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content: "A Morse code translator app requires encoding/decoding logic and a user-friendly interface. Learn how to build one with audio playback and vibration support."
+      img: blog10,
+      content:
+        "A Morse code translator app requires encoding/decoding logic and a user-friendly interface. Learn how to build one with audio playback and vibration support.",
     },
     {
       id: 11,
-      title: "Document Verification | Authenticating Identity in the Financial Sector",
+      title:
+        "Document Verification | Authenticating Identity in the Financial Sector",
       category: "App Ideas",
       author: "Kunal Grover",
       date: "29 January, 2025",
-      img: "https://images.pexels.com/photos/8830657/pexels-photo-8830657.jpeg?auto=compress&cs=tinysrgb&w=600",
-      content: "Document verification apps aid financial institutions in validating user identity using OCR, machine learning, and real-time document scanning."
-    }
-  ]
+      img: blog11,
+      content:
+        "Document verification apps aid financial institutions in validating user identity using OCR, machine learning, and real-time document scanning.",
+    },
+  ],
 };
 
 

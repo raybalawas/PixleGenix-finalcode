@@ -16,12 +16,13 @@ const blogData = [
     image: "/blog1.jpg",
     author: "Ajay Kumar",
     date: "June 9, 2025",
-    slug: "ai-transforming-web-development"
+    slug: "ai-transforming-web-development",
   },
   {
     id: 2,
     title: "Top 10 Web Technologies in 2025",
-    description: "Stay ahead in the tech game with the most in-demand frameworks and tools used by IT companies.",
+    description:
+      "Stay ahead in the tech game with the most in-demand frameworks and tools used by IT companies.",
     content: `
       2025 is set to be an exciting year for developers. Technologies like Astro, Svelte, React Server Components, and AI-powered dev tools 
       will dominate the web development space. Businesses must stay updated to remain competitive.
@@ -29,12 +30,13 @@ const blogData = [
     image: "/blog2.jpg",
     author: "Team PixelGenix",
     date: "June 5, 2025",
-    slug: "top-10-web-technologies-2025"
+    slug: "top-10-web-technologies-2025",
   },
   {
     id: 3,
     title: "Why Every Business Needs a Custom Web Portal",
-    description: "Discover how custom portals streamline operations, boost branding, and improve customer experience.",
+    description:
+      "Discover how custom portals streamline operations, boost branding, and improve customer experience.",
     content: `
       A custom web portal provides businesses with a centralized platform for operations, communication, and data management. 
       It reflects brand identity and improves customer satisfaction. PixelGenix offers scalable and secure portal solutions tailored to your business.
@@ -42,8 +44,8 @@ const blogData = [
     image: "/blog3.jpg",
     author: "PixelGenix Editorial",
     date: "May 25, 2025",
-    slug: "business-needs-custom-web-portal"
-  }
+    slug: "business-needs-custom-web-portal",
+  },
 ];
 
 const BlogDetail = () => {

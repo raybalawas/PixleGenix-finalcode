@@ -26,7 +26,7 @@ const StatsSection = () => {
         {/* Stat 1 */}
         <div>
           <h3 className="text-4xl font-bold text-indigo-600">
-            {inView && <CountUp end={1500} duration={2} />}+
+            {inView && <CountUp end={45} duration={2} />}+
           </h3>
           <p className="mt-2 text-gray-700">Projects Completed</p>
           <p className="text-sm text-gray-500">
@@ -37,7 +37,7 @@ const StatsSection = () => {
         {/* Stat 2 */}
         <div>
           <h3 className="text-4xl font-bold text-indigo-600">
-            {inView && <CountUp end={250} duration={2} />}+
+            {inView && <CountUp end={25} duration={2} />}+
           </h3>
           <p className="mt-2 text-gray-700">Expert Members</p>
           <p className="text-sm text-gray-500">
@@ -48,7 +48,7 @@ const StatsSection = () => {
         {/* Stat 3 */}
         <div>
           <h3 className="text-4xl font-bold text-indigo-600">
-            {inView && <CountUp end={700} duration={2} />}+
+            {inView && <CountUp end={17} duration={2} />}+
           </h3>
           <p className="mt-2 text-gray-700">Happy Clients</p>
           <p className="text-sm text-gray-500">
@@ -59,7 +59,7 @@ const StatsSection = () => {
         {/* Stat 4 */}
         <div>
           <h3 className="text-4xl font-bold text-indigo-600">
-            {inView && <CountUp end={100} duration={2} />}+
+            {inView && <CountUp end={4} duration={2} />}+
           </h3>
           <p className="mt-2 text-gray-700">Running Projects</p>
           <p className="text-sm text-gray-500">

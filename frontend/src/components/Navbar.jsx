@@ -132,8 +132,7 @@ const handleServiceClick = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-lg shadow-md border-b border-indigo-200 transition-all duration-500">
-  <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-
+      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 max-h-12">
           <img
@@ -142,9 +141,21 @@ const handleServiceClick = () => {
             className="object-contain"
             style={{ height: "48px", width: "48px" }}
           />
-          <span className="text-2xl font-extrabold bg-gradient-to-r from-indigo-400 to-pink-500 bg-clip-text text-transparent tracking-widest font-serif">
+          {/* <span className="text-2xl font-extrabold bg-gradient-to-r from-indigo-400 to-pink-500 bg-clip-text text-transparent tracking-widest font-serif">
               PixelGenix<span className="text-black">-IT SOLUTIONS</span>
+            </span> */}
+          <span className="tracking-widest font-serif leading-tight">
+            <span className="text-2xl font-extrabold bg-gradient-to-r from-indigo-400 to-pink-500 bg-clip-text text-transparent">
+              PixelGenix
             </span>
+            <span className="text-2xl bg-gradient-to-r from-indigo-400 to-pink-500 bg-clip-text text-transparent">
+              
+            </span>
+            <br />
+            <span className="text-sm text-black font-semibold ml-1">
+              IT SOLUTIONS
+            </span>
+          </span>
         </Link>
 
         {/* Desktop Nav */}
@@ -164,8 +175,18 @@ const handleServiceClick = () => {
           >
             <button className="text-gray-700 hover:text-indigo-600 font-medium flex items-center gap-1">
               Services
-              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              <svg
+                className="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </button>
 
@@ -176,7 +197,9 @@ const handleServiceClick = () => {
                     <button
                       key={i}
                       className={`flex items-start gap-3 p-3 rounded-lg text-left transition-all hover:bg-indigo-50 ${
-                        activeService.title === item.title ? "bg-indigo-100" : ""
+                        activeService.title === item.title
+                          ? "bg-indigo-100"
+                          : ""
                       }`}
                       onMouseEnter={() => setActiveService(item)}
                       onClick={() => navigate("/services")}
@@ -184,15 +207,23 @@ const handleServiceClick = () => {
                     >
                       {item.icon}
                       <div>
-                        <h4 className="font-semibold text-indigo-700">{item.title}</h4>
-                        <p className="text-sm text-gray-600">{item.description}</p>
+                        <h4 className="font-semibold text-indigo-700">
+                          {item.title}
+                        </h4>
+                        <p className="text-sm text-gray-600">
+                          {item.description}
+                        </p>
                       </div>
                     </button>
                   ))}
                 </div>
                 <div className="p-3">
-                  <h3 className="text-xl font-semibold text-indigo-700 mb-2">{activeService.title}</h3>
-                  <p className="text-gray-700 text-sm">{activeService.content}</p>
+                  <h3 className="text-xl font-semibold text-indigo-700 mb-2">
+                    {activeService.title}
+                  </h3>
+                  <p className="text-gray-700 text-sm">
+                    {activeService.content}
+                  </p>
                 </div>
               </div>
             )}
@@ -213,8 +244,18 @@ const handleServiceClick = () => {
           >
             <button className="text-gray-700 hover:text-indigo-600 font-medium flex items-center gap-1">
               Company
-              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              <svg
+                className="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </button>
 
@@ -227,7 +268,7 @@ const handleServiceClick = () => {
                     className="flex items-start gap-3 p-3 rounded-lg hover:bg-indigo-50 transition-all"
                   >
                     {icon}
-                    
+
                     <div>
                       <h4 className="font-semibold text-indigo-700">{title}</h4>
                       <p className="text-sm text-gray-600">{description}</p>
@@ -239,11 +280,36 @@ const handleServiceClick = () => {
           </div>
 
           {/* Other Nav */}
-          <Link to="/services" className="hover:bg-indigo-50 p-3 rounded-lg block text-gray-700 font-medium">All Services</Link>
-          <Link to="/portfolio" className="text-gray-700 hover:text-indigo-600 font-medium">Portfolio</Link>
-          <Link to="/blog" className="text-gray-700 hover:text-indigo-600 font-medium">Blog</Link>
-          <Link to="/contact" className="text-gray-700 hover:text-indigo-600 font-medium">Contact</Link>
-          <Link to="/contact" className="ml-4 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition">Get Quote</Link>
+          <Link
+            to="/services"
+            className="hover:bg-indigo-50 p-3 rounded-lg block text-gray-700 font-medium"
+          >
+            All Services
+          </Link>
+          <Link
+            to="/portfolio"
+            className="text-gray-700 hover:text-indigo-600 font-medium"
+          >
+            Portfolio
+          </Link>
+          <Link
+            to="/blog"
+            className="text-gray-700 hover:text-indigo-600 font-medium"
+          >
+            Blog
+          </Link>
+          <Link
+            to="/contact"
+            className="text-gray-700 hover:text-indigo-600 font-medium"
+          >
+            Contact
+          </Link>
+          <Link
+            to="/contact"
+            className="ml-4 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition"
+          >
+            Get Quote
+          </Link>
         </nav>
 
         {/* Mobile Toggle Button */}
@@ -257,13 +323,19 @@ const handleServiceClick = () => {
       {/* Mobile Menu */}
       {mobileMenu && (
         <div className="md:hidden bg-white px-4 py-2 space-y-2 shadow">
-          <button onClick={() => setMobileServiceOpen(!mobileServiceOpen)} className="w-full text-left font-medium text-gray-700">
+          <button
+            onClick={() => setMobileServiceOpen(!mobileServiceOpen)}
+            className="w-full text-left font-medium text-gray-700"
+          >
             Services
           </button>
           {mobileServiceOpen && (
             <div className="pl-4 space-y-1">
               {services.map((item, i) => (
-                <div key={i} className="flex items-center gap-2 text-sm text-gray-700">
+                <div
+                  key={i}
+                  className="flex items-center gap-2 text-sm text-gray-700"
+                >
                   {item.icon}
                   <span>{item.title}</span>
                 </div>
@@ -271,13 +343,20 @@ const handleServiceClick = () => {
             </div>
           )}
 
-          <button onClick={() => setMobileCompanyOpen(!mobileCompanyOpen)} className="w-full text-left font-medium text-gray-700">
+          <button
+            onClick={() => setMobileCompanyOpen(!mobileCompanyOpen)}
+            className="w-full text-left font-medium text-gray-700"
+          >
             Company
           </button>
           {mobileCompanyOpen && (
             <div className="pl-4 space-y-1">
               {dropdownItems.map((item, i) => (
-                <Link key={i} to={item.path} className="flex items-center gap-2 text-sm text-gray-700">
+                <Link
+                  key={i}
+                  to={item.path}
+                  className="flex items-center gap-2 text-sm text-gray-700"
+                >
                   {item.icon}
                   <span>{item.title}</span>
                 </Link>
@@ -285,32 +364,42 @@ const handleServiceClick = () => {
             </div>
           )}
 
-<div className="md:hidden bg-white/80 backdrop-blur-lg px-4 py-4 space-y-3 shadow-xl rounded-b-xl transition-all duration-500">
+          <div className="md:hidden bg-white/80 backdrop-blur-lg px-4 py-4 space-y-3 shadow-xl rounded-b-xl transition-all duration-500">
+            <Link
+              to="/services"
+              className="block text-indigo-700 font-medium hover:bg-indigo-50 px-3 py-2 rounded-md transition-all"
+            >
+              All Services
+            </Link>
 
-<Link to="/services" className="block text-indigo-700 font-medium hover:bg-indigo-50 px-3 py-2 rounded-md transition-all">
-  All Services
-</Link>
+            <Link
+              to="/portfolio"
+              className="block text-indigo-700 font-medium hover:bg-indigo-50 px-3 py-2 rounded-md transition-all"
+            >
+              Portfolio
+            </Link>
 
-<Link to="/portfolio" className="block text-indigo-700 font-medium hover:bg-indigo-50 px-3 py-2 rounded-md transition-all">
-  Portfolio
-</Link>
+            <Link
+              to="/blog"
+              className="block text-indigo-700 font-medium hover:bg-indigo-50 px-3 py-2 rounded-md transition-all"
+            >
+              Blog
+            </Link>
 
-<Link to="/blog" className="block text-indigo-700 font-medium hover:bg-indigo-50 px-3 py-2 rounded-md transition-all">
-  Blog
-</Link>
+            <Link
+              to="/contact"
+              className="block text-indigo-700 font-medium hover:bg-indigo-50 px-3 py-2 rounded-md transition-all"
+            >
+              Contact
+            </Link>
 
-<Link to="/contact" className="block text-indigo-700 font-medium hover:bg-indigo-50 px-3 py-2 rounded-md transition-all">
-  Contact
-</Link>
-
-<Link
-  to="/contact"
-  className="inline-block w-full text-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold px-4 py-2 rounded-md shadow hover:shadow-md hover:scale-[1.02] transition-transform duration-300"
->
-  🚀 Get Quotes
-</Link>
-</div>
-
+            <Link
+              to="/contact"
+              className="inline-block w-full text-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold px-4 py-2 rounded-md shadow hover:shadow-md hover:scale-[1.02] transition-transform duration-300"
+            >
+              🚀 Get Quotes
+            </Link>
+          </div>
         </div>
       )}
     </header>
