@@ -1,27 +1,38 @@
+import industryImage1 from "../assets/industryImage1.avif";
+import industryImage2 from "../assets/industryImage2.avif";
+import industryImage3 from "../assets/industryImage3.avif";
+import industryImage4 from "../assets/industryImage4.avif";
+import industryImage5 from "../assets/industryImage5.avif";
+import industryImage6 from "../assets/industryImage6.avif";
 const industries = [
   {
     name: "FinTech",
-    image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=1374&auto=format&fit=crop",
+    image: industryImage1,
   },
   {
     name: "Healthcare",
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=500&auto=format&fit=crop",
+    image:
+      industryImage2,
   },
   {
     name: "Education",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&fit=crop",
+    image:
+      industryImage3,
   },
   {
     name: "Retail",
-    image: "https://images.unsplash.com/photo-1739989934321-fadbccc56265?w=500&auto=format&fit=crop",
+    image:
+      industryImage4,
   },
   {
     name: "Travel & Hospitality",
-    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500&auto=format&fit=crop",
+    image:
+      industryImage5,
   },
   {
     name: "Logistics",
-    image: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?w=500&auto=format&fit=crop",
+    image:
+      industryImage6,
   },
 ];
 
@@ -33,7 +44,8 @@ const IndustriesSection = () => {
           Industries We <span className="text-indigo-600">Serve</span>
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-          Empowering businesses across sectors with innovative technology solutions tailored to each industry's needs.
+          Empowering businesses across sectors with innovative technology
+          solutions tailored to each industry's needs.
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">

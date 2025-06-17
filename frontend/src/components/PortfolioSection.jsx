@@ -1,26 +1,35 @@
+import ourPortfolio1 from "../assets/ourPortfolio1.avif";
+import ourPortfolio2 from "../assets/ourPortfolio2.avif";
+import ourPortfolio3 from "../assets/ourPortfolio3.avif";
+import ourPortfolio4 from "../assets/ourPortfolio4.avif";
+// Replace with your actual image import
 const projects = [
   {
     title: "E-Commerce Mobile App",
-    image: "https://images.unsplash.com/photo-1643906226799-59eab234e41d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RSUyMENvbW1lcmNlJTIwTW9iaWxlJTIwQXBwfGVufDB8fDB8fHww",
-    description: "A scalable and feature-rich e-commerce mobile application for Android and iOS.",
+    image: ourPortfolio1,
+    description:
+      "A scalable and feature-rich e-commerce mobile application for Android and iOS.",
     // link: "/portfolio/ecommerce-app",
   },
   {
     title: "SaaS Web Platform",
-    image: "https://images.unsplash.com/photo-1555209183-8facf96a4349?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fFNhYVMlMjBXZWIlMjBQbGF0Zm9ybXxlbnwwfHwwfHx8MA%3D%3D",
-    description: "Cloud-based SaaS platform with multi-tenant architecture and advanced analytics.",
+    image: ourPortfolio2,
+    description:
+      "Cloud-based SaaS platform with multi-tenant architecture and advanced analytics.",
     // link: "/portfolio/saas-platform",
   },
   {
     title: "Healthcare Portal",
-    image: "https://images.unsplash.com/photo-1608979827489-2b855e79debe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fEhlYWx0aGNhcmUlMjBQb3J0YWx8ZW58MHx8MHx8fDA%3D",
-    description: "Secure and HIPAA-compliant healthcare management portal for patients and doctors.",
+    image: ourPortfolio3,
+    description:
+      "Secure and HIPAA-compliant healthcare management portal for patients and doctors.",
     // link: "/portfolio/healthcare-portal",
   },
   {
     title: "Travel Booking Website",
-    image: "https://images.unsplash.com/photo-1619687702140-93b976c626ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFRyYXZlbCUyMEJvb2tpbmclMjBXZWJzaXRlfGVufDB8fDB8fHww",
-    description: "User-friendly travel booking website with integrated payment gateways.",
+    image: ourPortfolio4,
+    description:
+      "User-friendly travel booking website with integrated payment gateways.",
     // link: "/portfolio/travel-booking",
   },
 ];

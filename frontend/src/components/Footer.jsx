@@ -111,6 +111,7 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-sm text-gray-400">
             <li>React JS</li>
+            <li>React Native</li>
             <li>Node.js</li>
             <li>MongoDB</li>
             <li>PHP & MySQL</li>

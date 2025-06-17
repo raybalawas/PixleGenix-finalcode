@@ -83,7 +83,7 @@ const Portfolio = () => {
             <span className="text-indigo-400">Fusion Coder</span>
           </h2>
           <p className="text-md md:text-lg">
-            Explore our diverse portfolio of 500+ projects where we empowered
+            Explore our diverse portfolio of 45+ projects where we empowered
             businesses to lead with smart, scalable, and future-ready digital
             products. Your transformation story starts here.
           </p>
