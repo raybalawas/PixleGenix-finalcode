@@ -17,7 +17,7 @@ const serviceData = [
     description:
       "We build native and cross-platform mobile applications with seamless performance.",
     icon: <FaMobileAlt className="text-indigo-600 text-4xl" />,
-    image: 'https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1806&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: appDevelopmentImage,
     packages: [
       {
         name: "Starter",
@@ -61,7 +61,7 @@ const serviceData = [
       "Enterprise-grade software solutions for automation, CRM, ERP, and more.",
     icon: <FaCode className="text-indigo-600 text-4xl" />,
     image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1581091870622-2c7b9a9dc0c2?auto=format&fit=crop&w=800&q=60",
     packages: [
       {
         name: "Starter",
@@ -105,7 +105,7 @@ const serviceData = [
       "Modern websites with React, Node, and scalable backend solutions.",
     icon: <FaGlobe className="text-indigo-600 text-4xl" />,
     image:
-      "https://plus.unsplash.com/premium_photo-1678566153919-86c4ba4216f1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     packages: [
       {
         name: "Starter",
@@ -139,7 +139,8 @@ const serviceData = [
     title: "Game Development",
     description: "2D/3D and AR/VR games for mobile, PC, and web platforms.",
     icon: <FaGamepad className="text-indigo-600 text-4xl" />,
-    image:"https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1615911181804-dc9d6c6fe3ef?auto=format&fit=crop&w=800&q=60",
     packages: [
       {
         name: "Starter",
@@ -174,7 +175,8 @@ const serviceData = [
     description:
       "SEO, PPC, Social Media, and content marketing strategies that convert.",
     icon: <FaBullhorn className="text-indigo-600 text-4xl" />,
-    image: "https://images.unsplash.com/photo-1557838923-2985c318be48?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=60",
     packages: [
       {
         name: "Starter",
@@ -209,7 +211,7 @@ const serviceData = [
     description: "Taxi, food, home services — fully managed on-demand apps.",
     icon: <FaRocket className="text-indigo-600 text-4xl" />,
     image:
-      "https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1566241440091-ec10de8db2e1?auto=format&fit=crop&w=800&q=60",
     packages: [
       {
         name: "Starter",
@@ -245,7 +247,7 @@ const serviceData = [
       "Chatbots, predictive analytics, NLP, and ML-based applications.",
     icon: <FaRobot className="text-indigo-600 text-4xl" />,
     image:
-      "https://images.unsplash.com/photo-1684369175809-f9642140a1bd?q=80&w=1842&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1581091012184-5c1f75de0e4e?auto=format&fit=crop&w=800&q=60",
     packages: [
       {
         name: "Starter",
@@ -285,7 +287,7 @@ const serviceData = [
       "Custom eCommerce stores with secure payment, cart, and admin panel.",
     icon: <FaShoppingCart className="text-indigo-600 text-4xl" />,
     image:
-      "https://plus.unsplash.com/premium_vector-1727153149407-b4f9caeaec69?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1542834369-f10ebf06d3cb?auto=format&fit=crop&w=800&q=60",
     packages: [
       {
         name: "Starter",
@@ -344,7 +346,6 @@ const Services = () => {
                   <div>{service.icon}</div>
                   <span className="text-sm font-medium text-gray-800">
                     {service.title}
-                    {/* <img src={service?.image || ''} alt={`${service.title}-service`} /> */}
                   </span>
                 </div>
               ))}
@@ -362,11 +363,11 @@ const Services = () => {
                     alt={selectedService.title}
                     className="w-full h-full object-cover"
                   />
-                  {/* <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                     <h3 className="text-3xl font-bold text-white drop-shadow-lg">
                       {selectedService.title}
                     </h3>
-                  </div> */}
+                  </div>
                 </div>
               )}
 
