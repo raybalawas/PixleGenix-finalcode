@@ -245,7 +245,7 @@ const serviceData = [
       "Chatbots, predictive analytics, NLP, and ML-based applications.",
     icon: <FaRobot className="text-indigo-600 text-4xl" />,
     image:
-      "https://images.unsplash.com/photo-1581091012184-5c1f75de0e4e?auto=format&fit=crop&w=800&q=60",
+      "https://images.unsplash.com/photo-1684369175809-f9642140a1bd?q=80&w=1842&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     packages: [
       {
         name: "Starter",
@@ -285,7 +285,7 @@ const serviceData = [
       "Custom eCommerce stores with secure payment, cart, and admin panel.",
     icon: <FaShoppingCart className="text-indigo-600 text-4xl" />,
     image:
-      "https://images.unsplash.com/photo-1542834369-f10ebf06d3cb?auto=format&fit=crop&w=800&q=60",
+      "https://plus.unsplash.com/premium_vector-1727153149407-b4f9caeaec69?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     packages: [
       {
         name: "Starter",
