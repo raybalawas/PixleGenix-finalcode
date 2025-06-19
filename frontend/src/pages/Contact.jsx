@@ -56,11 +56,11 @@ const Contact = () => {
         }
         // Show backend validation or server errors
         // setFormError(data.error || "Something went wrong. Please try again.");
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: data.error || "Something went wrong. Please try again.",
-        });
+        // Swal.fire({
+        //   icon: "error",
+        //   title: "Oops...",
+        //   text: data.error || "Something went wrong. Please try again.",
+        // });
         // alert(data.message || "Something went wrong.");
       }
     } catch (error) {

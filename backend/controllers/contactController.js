@@ -28,7 +28,7 @@ exports.submitContactForm = async (req, res) => {
           fieldErrors: { email: "Please provide a valid email address" },
         });
     }
-
+    console.log("Input validation passed");
     await Contact.create({
       name,
       email,
