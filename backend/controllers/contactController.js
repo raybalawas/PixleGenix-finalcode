@@ -47,7 +47,7 @@ exports.submitContactForm = async (req, res) => {
 
     const mailOptions = {
       from: `"PixelGenix Website" <raybalawas@gmail.com>`,
-      to: "rahulyadav201818@gmail.com",
+      to: "pixelgenixitsolutions@gmail.com",
       subject: `📩 New Contact Form Submission from ${name}`,
       html: `
         <h3>New Contact Form Submission</h3>
