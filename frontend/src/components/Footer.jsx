@@ -1,5 +1,11 @@
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaStar } from "react-icons/fa";
-import image from '../assets/image.png';
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaStar,
+} from "react-icons/fa";
+import image from "../assets/image.png";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -31,19 +37,18 @@ const Footer = () => {
             />
             <span className="tracking-widest font-serif">
               <span className="text-2xl font-extrabold bg-gradient-to-r from-indigo-400 to-pink-500 bg-clip-text text-transparent">
-                PixelGenix
+                Zerfinis
               </span>
               <span className="text-2xl from-indigo-400 to-pink-500 bg-clip-text text-transparent">
                 -
               </span>
               <span className="text-sm text-white font-semibold ml-1 align-middle">
-                IT SOLUTIONS
+                Pvt Ltd
               </span>
             </span>
           </div>
           <p className="text-sm text-gray-400 leading-relaxed font-light italic">
-            Transforming businesses through next-gen IT solutions that are
-            efficient, innovative, and future-ready.
+            Next-gen messaging APIs: From OTPs to bulk campaigns, simplified.
           </p>
         </motion.div>
 
@@ -83,14 +88,13 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-sm text-gray-400">
             {[
-              "Mobile App Development",
-              "iOS App Development",
-              "Android App Development",
-              "Hybrid App Development",
+              "OTP Authentication API",
+              "Bulk SMS & WhatsApp Messaging Solutions",
+              "AI & Automation Solutions",
+              "App Development",
               "Software Consulting",
               "Web Development",
               "UI/UX Development",
-              "Data Analytics Services",
               "Ecommerce App Development",
             ].map((service, index) => (
               <li key={index} className="hover:text-indigo-400 cursor-pointer">
@@ -116,6 +120,7 @@ const Footer = () => {
             <li>MongoDB</li>
             <li>PHP & MySQL</li>
             <li>Laravel</li>
+            <li></li>
             <li>Artificial Intelligence (AI)</li>
             <li>Machine Learning</li>
             <li>Digital Marketing</li>
@@ -139,21 +144,21 @@ const Footer = () => {
           </p>
           <p className="text-sm text-gray-400 mb-1">
             📞{" "}
-            <a href="tel:+916350399815" className="hover:text-green-400">
-              +91 63503 99815
+            <a href="tel:+918949540232" className="hover:text-green-400">
+              +91 8949540232
             </a>
             ,{" "}
-            <a href="tel:+917014613453" className="hover:text-green-400">
-              +91 70146 13453
+            <a href="tel:+919460129249" className="hover:text-green-400">
+              +91 9460129249
             </a>
           </p>
           <p className="text-sm text-gray-400">
             📧{" "}
             <a
-              href="mailto:pixelgenixitsolutions@gmail.com"
+              href="mailto:zerfinixpvtltd@gmail.com"
               className="hover:text-yellow-300"
             >
-              pixelgenixitsolutions@gmail.com
+              zerfinixpvtltd@gmail.com
             </a>
           </p>
         </motion.div>
@@ -184,7 +189,7 @@ const Footer = () => {
             <FaTwitter />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/rahul-yadav-8b0158284/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-300 transition"
@@ -235,7 +240,7 @@ const Footer = () => {
         </div>
 
         <div className="text-xs text-gray-400 font-light tracking-wider bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 py-2">
-          &copy; {new Date().getFullYear()} PixelGenix IT Solution. All Rights
+          &copy; {new Date().getFullYear()} Zerfinis Pvt Ltd. All Rights
           Reserved.
         </div>
       </motion.div>

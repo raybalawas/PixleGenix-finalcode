@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import Newproducts from "./pages/Newproducts";
 import About from "./pages/About";
 import BlogSection from "./pages/BlogSection";
 import BlogDetail from "./pages/BlogDetail";
@@ -29,6 +30,7 @@ function App() {
               <Route path="/blog" element={<BlogSection />} />
               <Route path="/blog/:slug" element={<BlogDetail />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/products" element={<Newproducts />} />
               <Route path="/company/:section" element={<Company />} />
               <Route path="/admin-login" element={<AdminLogin />} />
               <Route path="/admin-dashboard" element={<AdminDashboard />} />

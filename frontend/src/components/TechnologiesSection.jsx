@@ -20,7 +20,7 @@ const TechnologiesSection = () => {
           Technologies We <span className="text-indigo-400">Root For</span>
         </motion.h2>
         <p className="text-gray-300 mb-12 max-w-2xl mx-auto">
-          Your Trusted Partner Navigating the Digital Era with Innovation, Scalability & Intelligence.
+          Your Trusted Partner for WhatsApp Bulk Messaging & OTP Delivery.
         </p>
 
         <div className="flex flex-wrap justify-center gap-6">

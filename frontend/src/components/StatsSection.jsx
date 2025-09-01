@@ -16,9 +16,15 @@ const StatsSection = () => {
           <span className="text-indigo-600">Technology at Heart</span>
         </h2>
         <p className="text-gray-600">
-          At <span className="font-semibold text-indigo-600">PixelGenix</span>, we don’t just deliver tech
-          solutions — we blend magic with innovation. Our techies give your business a new identity with
-          out-of-the-box products that make life better.
+          At <span className="font-semibold text-indigo-600">Zerfinix</span>, we
+          don’t just provide APIs — we empower businesses to connect smarter.
+          With our robust
+          <span className="font-semibold">
+            {" "}
+            WhatsApp Bulk Messaging & OTP solutions
+          </span>
+          , you can reach customers instantly, boost engagement, and scale
+          communication with ease.
         </p>
       </div>
 

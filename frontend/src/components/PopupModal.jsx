@@ -94,7 +94,7 @@ const PopupModal = () => {
               <div className="p-8 overflow-auto">
                 <div className="flex justify-between items-center mb-6">
                   <h2 className="text-3xl font-bold text-indigo-700">
-                    🚀 Welcome to PixelGenix IT Solution
+                    🚀 Welcome to Zerfinis Pvt Ltd
                   </h2>
                   <button
                     onClick={() => setShowModal(false)}
@@ -105,7 +105,7 @@ const PopupModal = () => {
                 </div>
 
                 <p className="text-gray-700 mb-6 text-base">
-                  🚨 Unlock access to our premium IT training, project
+                  🚨 Unlock access to our premium Add Campaings, project
                   consulting, and tailored software solutions. Fill the form
                   below and we’ll get back to you shortly!
                 </p>
@@ -174,7 +174,7 @@ const PopupModal = () => {
               </div>
 
               <div className="bg-gradient-to-r from-pink-500 to-purple-500 text-white text-center py-3 text-sm font-medium rounded-b-xl">
-                🔥 1000+ developers trust PixelGenix IT Solution. Join the
+                🔥 13+ Business Ownrs trust Zerfinis Pvt Ltd. Contact the
                 revolution today!
               </div>
             </div>

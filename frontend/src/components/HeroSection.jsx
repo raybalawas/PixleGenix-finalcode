@@ -26,7 +26,7 @@ const HeroSection = () => {
           <span className="text-indigo-400">Technology</span>
         </h1>
         <p className="mt-6 text-lg md:text-xl text-gray-100 max-w-2xl mx-auto">
-          At <strong className="text-indigo-300">PixelGenix</strong>, we craft
+          At <strong className="text-indigo-300">Zerfinis</strong>, we craft
           cutting-edge web, mobile, and AI-powered software that helps
           businesses transform and scale globally.
         </p>

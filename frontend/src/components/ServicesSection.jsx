@@ -1,11 +1,19 @@
 import React from "react";
 import {
-  Briefcase, Code, Smartphone, Globe,
-  Monitor, ShieldCheck, Users, Cpu
+  Briefcase,
+  Code,
+  Smartphone,
+  Globe,
+  Monitor,
+  ShieldCheck,
+  Users,
+  Cpu,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const services = [
+  { icon: <Code size={36} />, title: "Bulk WhatsApp Add Campaign" },
+  { icon: <Code size={36} />, title: "Bulk WhatsApp OTP" },
   { icon: <Code size={36} />, title: "Software Development" },
   { icon: <Smartphone size={36} />, title: "App Development" },
   { icon: <Globe size={36} />, title: "Web Development" },
@@ -31,7 +39,8 @@ const ServicesSection = () => {
             <span className="text-indigo-600">Services</span> We Offer
           </h2>
           <p className="text-gray-600 mb-16 max-w-2xl mx-auto">
-            Your one-stop solution to meet your business vision and mission — only at <strong>PixelGenix</strong>.
+            Your one-stop solution to meet your business vision and mission —
+            only at <strong>Zerfinis</strong>.
           </p>
         </motion.div>
 
@@ -48,7 +57,9 @@ const ServicesSection = () => {
               <div className="text-indigo-600 mb-4 group-hover:animate-pulse">
                 {service.icon}
               </div>
-              <h4 className="text-lg font-semibold text-gray-800">{service.title}</h4>
+              <h4 className="text-lg font-semibold text-gray-800">
+                {service.title}
+              </h4>
             </motion.div>
           ))}
         </div>

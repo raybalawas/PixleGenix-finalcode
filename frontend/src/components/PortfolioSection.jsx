@@ -5,6 +5,13 @@ import ourPortfolio4 from "../assets/ourPortfolio4.avif";
 // Replace with your actual image import
 const projects = [
   {
+    title: "Bulk WhatsApp Messaging API (with OTP & SMS)",
+    image: ourPortfolio1,
+    description:
+      "A scalable messaging platform for high-volume WhatsApp campaigns: template-based bulk sends, OTP delivery, webhooks, delivery/read receipts, rate limiting, number verification, and detailed analytics—built for marketing, alerts, and transactional flows.",
+    // link: "/portfolio/bulk-whatsapp-api",
+  },
+  {
     title: "E-Commerce Mobile App",
     image: ourPortfolio1,
     description:

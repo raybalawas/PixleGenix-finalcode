@@ -1,65 +1,98 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import pxlogo from "../assets/pxlogo.png";
-import { useNavigate } from 'react-router-dom';
+import zerfinislogo from "../assets/zerfinislogo.png";
+import { useNavigate } from "react-router-dom";
 
 import {
-  FaUserTie, FaLaptopCode, FaBriefcase, FaNetworkWired,
-  FaCommentAlt, FaUserFriends, FaNewspaper, FaProjectDiagram,
-  FaMobileAlt, FaCode, FaGlobe, FaGamepad, FaBullhorn, FaRocket, FaRobot, FaShoppingCart,
-  FaBars, FaTimes
+  FaUserTie,
+  FaLaptopCode,
+  FaBriefcase,
+  FaNetworkWired,
+  FaCommentAlt,
+  FaUserFriends,
+  FaNewspaper,
+  FaProjectDiagram,
+  FaMobileAlt,
+  FaCode,
+  FaGlobe,
+  FaGamepad,
+  FaBullhorn,
+  FaRocket,
+  FaRobot,
+  FaShoppingCart,
+  FaBars,
+  FaTimes,
 } from "react-icons/fa";
 
-
-
 const services = [
-    {
-      title: "Mobile App Development",
-      description: "User-friendly mobile apps tailored to your business needs.",
-      icon: <FaMobileAlt className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
-      content: "We build native and cross-platform mobile applications with seamless performance.",
-    },
+  {
+    title: "Mobile App Development",
+    description: "User-friendly mobile apps tailored to your business needs.",
+    icon: (
+      <FaMobileAlt className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
+    content:
+      "We build native and cross-platform mobile applications with seamless performance.",
+  },
   {
     title: "Software Development",
     description: "Custom software designed for scalability and efficiency.",
-    icon: <FaCode className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
-    content: "Enterprise-grade software solutions for automation, CRM, ERP, and more.",
+    icon: (
+      <FaCode className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
+    content:
+      "Enterprise-grade software solutions for automation, CRM, ERP, and more.",
   },
   {
     title: "Web Development",
     description: "Responsive, high-performance websites for all industries.",
-    icon: <FaGlobe className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
-    content: "Modern websites with React, Node, and scalable backend solutions.",
+    icon: (
+      <FaGlobe className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
+    content:
+      "Modern websites with React, Node, and scalable backend solutions.",
   },
   {
     title: "Game Development",
     description: "Immersive gaming experiences with cutting-edge tech.",
-    icon: <FaGamepad className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
+    icon: (
+      <FaGamepad className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
     content: "2D/3D and AR/VR games for mobile, PC, and web platforms.",
   },
   {
     title: "Digital Marketing",
     description: "Data-driven strategies to boost visibility and growth.",
-    icon: <FaBullhorn className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
-    content: "SEO, PPC, Social Media, and content marketing strategies that convert.",
+    icon: (
+      <FaBullhorn className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
+    content:
+      "SEO, PPC, Social Media, and content marketing strategies that convert.",
   },
   {
     title: "On-Demand",
     description: "Scalable on-demand solutions for instant service delivery.",
-    icon: <FaRocket className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
+    icon: (
+      <FaRocket className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
     content: "Taxi, food, home services — fully managed on-demand apps.",
   },
   {
     title: "AI Development",
     description: "AI-powered automation, insights, and smart solutions.",
-    icon: <FaRobot className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
+    icon: (
+      <FaRobot className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
     content: "Chatbots, predictive analytics, NLP, and ML-based applications.",
   },
   {
     title: "eCommerce Development",
     description: "Seamless, scalable shopping platforms built for growth.",
-    icon: <FaShoppingCart className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
-    content: "Custom eCommerce stores with secure payment, cart, and admin panel.",
+    icon: (
+      <FaShoppingCart className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
+    content:
+      "Custom eCommerce stores with secure payment, cart, and admin panel.",
   },
 ];
 
@@ -68,49 +101,65 @@ const dropdownItems = [
     title: "About Us",
     description: "Learn about our app and software development services.",
     path: "/company/about",
-    icon: <FaUserTie className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
+    icon: (
+      <FaUserTie className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
   },
   {
     title: "Case Studies",
     description: "Explore our successful real-world solutions.",
     path: "/company/case-studies",
-    icon: <FaLaptopCode className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
+    icon: (
+      <FaLaptopCode className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
   },
   {
     title: "Career",
     description: "Join our team & grow in a dynamic environment.",
     path: "/company/career",
-    icon: <FaBriefcase className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
+    icon: (
+      <FaBriefcase className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
   },
   {
     title: "Infrastructure",
     description: "Modern setup that ensures efficiency & security.",
     path: "/company/infrastructure",
-    icon: <FaNetworkWired className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
+    icon: (
+      <FaNetworkWired className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
   },
   {
     title: "Testimonials",
     description: "See how we’ve helped our clients succeed.",
     path: "/company/testimonials",
-    icon: <FaCommentAlt className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
+    icon: (
+      <FaCommentAlt className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
   },
   {
     title: "Referral Partner",
     description: "Refer clients, earn rewards, grow your network.",
     path: "/company/referral-partner",
-    icon: <FaUserFriends className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
+    icon: (
+      <FaUserFriends className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
   },
   {
     title: "News",
     description: "Stay updated on achievements & trends.",
     path: "/company/news",
-    icon: <FaNewspaper className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
+    icon: (
+      <FaNewspaper className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
   },
   {
     title: "Portfolio",
     description: "Creative and expert project showcases.",
     path: "/company/portfolio",
-    icon: <FaProjectDiagram className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />,
+    icon: (
+      <FaProjectDiagram className="text-indigo-600 text-xl group-hover:scale-110 group-hover:text-purple-700 transition-transform duration-300" />
+    ),
   },
 ];
 
@@ -124,9 +173,9 @@ const Navbar = () => {
   const [mobileCompanyOpen, setMobileCompanyOpen] = useState(false);
 
   const navigate = useNavigate();
-const handleServiceClick = () => {
-  navigate('/allservices');
-};
+  const handleServiceClick = () => {
+    navigate("/allservices");
+  };
 
   let servicesTimeout, dropdownTimeout;
 
@@ -136,24 +185,19 @@ const handleServiceClick = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 max-h-12">
           <img
-            src={pxlogo}
-            alt="PixelGenix Logo"
+            src={zerfinislogo}
+            alt="Zerfinis Logo"
             className="object-contain"
             style={{ height: "48px", width: "48px" }}
           />
-          {/* <span className="text-2xl font-extrabold bg-gradient-to-r from-indigo-400 to-pink-500 bg-clip-text text-transparent tracking-widest font-serif">
-              PixelGenix<span className="text-black">-IT SOLUTIONS</span>
-            </span> */}
           <span className="tracking-widest font-serif leading-tight">
             <span className="text-2xl font-extrabold bg-gradient-to-r from-indigo-400 to-pink-500 bg-clip-text text-transparent">
-              PixelGenix
+              Zerfinis
             </span>
-            <span className="text-2xl bg-gradient-to-r from-indigo-400 to-pink-500 bg-clip-text text-transparent">
-              
-            </span>
+            <span className="text-2xl bg-gradient-to-r from-indigo-400 to-pink-500 bg-clip-text text-transparent"></span>
             <br />
             <span className="text-sm text-black font-semibold ml-1">
-              IT SOLUTIONS
+              Pvt Ltd
             </span>
           </span>
         </Link>
@@ -305,6 +349,12 @@ const handleServiceClick = () => {
             Contact
           </Link>
           <Link
+            to="/products"
+            className="text-gray-700 hover:text-indigo-600 font-medium"
+          >
+            My New Products
+          </Link>
+          <Link
             to="/contact"
             className="ml-4 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition"
           >
@@ -392,7 +442,12 @@ const handleServiceClick = () => {
             >
               Contact
             </Link>
-
+            <Link
+              to="/products"
+              className="text-gray-700 hover:text-indigo-600 font-medium"
+            >
+              My New Products
+            </Link>
             <Link
               to="/contact"
               className="inline-block w-full text-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold px-4 py-2 rounded-md shadow hover:shadow-md hover:scale-[1.02] transition-transform duration-300"
